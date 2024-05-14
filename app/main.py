@@ -61,4 +61,6 @@ async def update_post(id :int, post: Post):
     post_dict = post.model_dump()
     post_dict["id"] = id
     my_post[index] = post_dict
-    return {"message": "updated post"}
+    return {"message": post_dict}
+
+ 
